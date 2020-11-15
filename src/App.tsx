@@ -3,10 +3,15 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import { BtnLink } from './components/BtnLink';
 import { locationFail } from './helpers/geoCallbacks'
+import { CoordsType } from './types/coords-type'
 
+const INITIAL_STATE: CoordsType = {
+  latitude: 0,
+  longitude: 0
+}
 
 function App() {
-  const [coords, setCoords] = useState<null | object>(null)
+  const [coords, setCoords] = useState<CoordsType>(INITIAL_STATE)
   const coffeeLink = `https://maps.google.com/?ll=${coords.latitude},${coords.longitude}&q=coffee&z=15`;
   const wineLink = `https://maps.google.com/?ll=${coords.latitude},${coords.longitude}&q=wine+bar&z=15`;
 
