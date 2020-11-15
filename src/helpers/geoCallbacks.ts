@@ -5,6 +5,6 @@ export const locationSuccess = (position: Position) => {
 
 
 export const locationFail = (error: PositionError) => {
-    console.log({ error });
-    return { error }
+    console.error({ error });
+    setTimeout(() => window.location.reload(), 4000);
 };
