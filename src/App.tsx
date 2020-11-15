@@ -10,7 +10,7 @@ function App() {
   const coffeeLink = `https://maps.google.com/?ll=${latitude},${longitude}&q=coffee&z=15`;
   const wineLink = `https://maps.google.com/?ll=${latitude},${longitude}&q=wine+bar&z=15`;
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition();
+    navigator.geolocation.getCurrentPosition(locationSuccess, locationFail);
   }, [])
 
   return (
