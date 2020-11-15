@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BtnLink Tests should pass smoke/snapshot test 1`] = `
+<DocumentFragment>
+  <button
+    class="BtnLink"
+    style="background-color: rgb(47, 47, 47);"
+  >
+    <a
+      href="https://test.com/test"
+    >
+      Test
+    </a>
+  </button>
+</DocumentFragment>
+`;
