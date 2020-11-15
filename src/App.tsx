@@ -25,9 +25,11 @@ function App() {
   return (
     <div className="App">
       <h1>Would you like...</h1>
-      <BtnLink text="Coffee" color="#6F4E37" link={coffeeLink} />
-      <p>or</p>
-      <BtnLink text="Wine" color="#722F37" link={wineLink} />
+      <main>
+        <BtnLink text="Coffee" color="#6F4E37" link={coffeeLink} />
+        <p>or</p>
+        <BtnLink text="Wine" color="#722F37" link={wineLink} />
+      </main>
     </div>
   );
 }
